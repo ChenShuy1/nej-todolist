@@ -1,0 +1,144 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.hide {
+  visibility: hidden;
+}
+.noshow {
+  display: none;
+}
+.show {
+  visibility: visible;
+  display: block;
+}
+
+.header {
+  font-size: 100px;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+}
+
+.content {
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+#inputer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+#inputer #down {
+  align-self: center;
+  margin: 0px 10px;
+  flex-grow: 0;
+}
+#inputer #todo {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+
+#list .event {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 18px;
+  border-bottom: 1px solid #ededed;
+}
+#list .noshow {
+  display: none !important;
+}
+#list .event label {
+  flex: 1;
+  padding: 0 15px;
+  font-size: 25px;
+}
+#list .event span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+}
+#list .event label input {
+  width: 100%;
+  height: 35px;
+  font-size: 25px;
+  outline: none;
+}
+/* #list .event .completed {
+  text-decoration:line-through;
+  color: #d9d9d9;
+} */
+#list [status=completed] span{
+  text-decoration:line-through;
+  color: #d9d9d9;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  font-size: 15px;
+}
+.footer div:nth-of-type(2) {
+  flex: 1;
+  padding: 0 20px;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.f-cb{
+  zoom:1;
+}
+.w-tab{
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+.w-tab .itm{
+  height:25px;
+  line-height:25px;
+  margin:0 5px;
+  padding: 0 5px;
+  list-style:none;
+  cursor:pointer;
+}
+.w-tab .itm.js-selected{
+  border: 1px solid;
+  border-color: rgba(175, 47, 47, 0.2);
+  border-radius: 5px;
+}
+
+#clear {
+  cursor: pointer;
+}
+
+.down-none {
+  visibility: hidden;
+}
+.down-light {
+  height: 0;
+  width: 0;
+  border-top: 10px solid #e6e6e6;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+.down-dark {
+  height: 0;
+  width: 0;
+  border-top: 10px solid #737373;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}

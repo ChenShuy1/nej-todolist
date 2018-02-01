@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/stylesheets/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todo-list</title>
+</head>
+<body>
+  <div>
+    <h1 class="header">todos</h1>
+    <div class="content">
+      <div id="inputer">
+        <div class="down-none" id="down"></div>
+        <input
+          type="text" name="todo" id="todo"
+          placeholder="What needs to be done?"
+          value=""
+        >
+      </div>
+      <div id="list">
+      </div>
+      <div class="show">
+        <div class="footer">
+          <div>
+            <span id="counter">0</span>
+            items left</div>
+          <div>
+            <ul class="w-tab f-cb" id="tab">
+              <li class="itm">All</li>
+              <li class="itm">Active</li>
+              <li class="itm">Completed</li>
+            </ul>
+          </div>
+          <div id="clear">Clear completed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/javascripts/nej/src/define.js?pro=./"></script>
+  <script src="/javascripts/pro/api.js"></script>
+  <script type="text/javascript" src="/javascripts/pro/index.js">
+  </script>
+</body>
+</html>
